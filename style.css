@@ -1,0 +1,56 @@
+body {
+    background-color: #ECEFF2;
+    margin: 8px;
+    overflow-x: hidden;
+}
+
+.hind-bold {
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.flowers {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 75%;
+    max-width: 100vw;
+}
+
+.handwriting {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: calc(100% + 5px);
+    max-width: 100vw;
+}
+
+.projects {
+    color: #3F4F60;
+    font-size: clamp(30px, 1.63vw, 31px);
+    margin: 50vh 0 0 7%;
+    position: relative;
+    z-index: 1;
+}
+
+.caption {
+    color: #3F4F60;
+    font-size: clamp(17px, 1.32vw, 25px);
+    margin: 1.4vh 5% 0 7%;
+    width: 47%;
+    max-width: 1000px;
+    line-height: 1.38;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 12px #ECEFF2, 0 0 24px #ECEFF2, 0 0 38px rgba(236, 239, 242, .9);
+}
+
+/* ─── узкие окна (телефон): 47% ширины слишком мало, там текст на всю ширину ─── */
+@media (max-width: 700px) {
+    .caption { width: auto; margin-right: 7%; line-height: 1.5 }
+    .projects { margin-top: 14vh }
+    .flowers { left: 32%; width: 68% }
+}
